@@ -1,0 +1,101 @@
+<!-- In this file we take fourdiv1 and update it to position the division using 
+     the flexbox option. 
+     Flexbox:  This tag is a great tag for quickly creating a responsive site.  
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Four Divisions: Base</title>
+
+	<style>
+
+
+		p {
+			font-size: 50px;
+		}
+
+		.standard {
+/* configuring size for each section */
+			height: 100px;
+			width: 100px;
+			background: black;
+			display: table;
+		
+		}
+
+		.divcenter {
+/* changing how it is viewed on the page for each section */
+			padding-bottom: auto;
+			padding-top: auto;
+
+		}
+
+		.sec1 {
+			background: red;
+		}
+
+		.sec2 {
+			background: green;
+		}
+
+		.sec3 {
+			background: blue;
+		}
+
+		.sec4 {
+			background: yellow;
+		}
+
+		.parent p {
+	        
+     		vertical-align: middle;
+      		text-align: center; 
+    	}
+
+    	.parent div {
+     		width: 50%;
+      		min-width: 300px;
+    	}
+
+
+    	.flexbox-container {
+    		display: flex;
+    		flex-wrap: wrap;
+    		justify-content: center;
+
+    	}
+
+    	.flex-container > div {
+
+
+    	}
+
+
+	</style>
+</head>
+<body>
+
+<!--- class for each section --->
+	<div class = "parent flexbox-container">
+
+
+		<div class = "sec1 standard divcenter">
+			<p>SECTION 1</p>
+		</div>	
+
+		<div class = "sec2 standard divcenter">
+			<p>SECTION 2</p>
+		</div>	
+
+		<div class = "sec3 standard divcenter">
+			<p>SECTION 3</p>
+		</div>	
+
+		<div class = "sec4 standard divcenter">
+			<p>SECTION 4</p>
+		</div>	
+
+	</div>
+
+</body>
+</html>
