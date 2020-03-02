@@ -8,14 +8,14 @@ list = [4,7,9,10,11];
 
 //write a loop to calculate the sum of the list
 for(int i=0; i<list.length;i++) {
-	sum1 += list[i];
+	sum1 +== list[i];
 }
 console.log(sum1);
 
 //write a loop to find the sum of the even values
 for(int i=0;i<list.length;i++) {
 	if(list[i]%2===0) {
-		sum2 += list[i];
+		sum2 +== list[i];
 	}
 }
 console.log(sum2);
@@ -24,7 +24,7 @@ console.log(sum2);
 
 for(int i=0;i<list.length();i++) {
 	if(list[i]>5) {
-		sum3 += list[i];
+		sum3 +== list[i];
 	}
 }
 print(sum3);
